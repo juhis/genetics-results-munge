@@ -29,11 +29,13 @@ Config files:
 
 Running:
 
-The config files allow the workflows be run locally or in Google Compute Engine using Cloud Life Sciences API. If run locally, input files can be given as bucket uris, or they can be copied on the machine up front. If run in the cloud, input files can be given as bucket uris. Generally fine-mapping result files are small enough to run locally whereas full association result files are bigger and spreading the compute can make sense, though there will be overhead from localization/delocalization of files.
+The config files allow the workflows be run locally or in Google Compute Engine using Cloud Life Sciences API. If run locally, input files listed in `metadata_loc` configuration can be given as bucket uris, or they can be copied on the machine up front. If run in the cloud, input files can be given as bucket uris. Generally fine-mapping result files are small enough to run locally whereas full association result files are bigger and spreading the compute can make sense, though there will be overhead from localization/delocalization of files.
 
 The jobs are by default run with the GCR docker image `eu.gcr.io/finngen-refinery-dev/bioinformatics`. Any other image that has htslib (bgzip and tabix) installed may be speficied in the config files, or `docker.enabled` can be set to false if run locally and htslib is installed.
 
 If run in the cloud, `GOOGLE_WORKDIR`, `GOOGLE_PROJECT` and `GOOGLE_SERVACC` environment variables need to be set, see [nf/nextflow.config](nf/nextflow.config)
+
+There is a [script](scripts/munge_fg_credsets.sh) to join FinnGen credible set result files to a format that can be used with this workflow. `gsutil` is required to run the script.
 
 ### Example run: Merge eQTL Catalogue R6 fine-mapped credible sets locally:
 
@@ -56,7 +58,7 @@ eQTL_Catalogue_R6  QTD000336  eQTL       ENSG00000238009                     1  
 
 ## merge_ot.nf
 
-TBA
+The workflow [nf/merge_ot.nf](nf/merge_ot.nf) is used to convert Open Targets parquet format summary stats to a bgzipped tabixed file containing all results. This doesn't filter by p-value (Open Targets is filtered by p-value 0.005 up front). The output is the same as in [nf/merge.nf](nf/merge.nf). A docker image with / an installation of the `pyarrow` pip package is required.
 
 ## merge_resources.nf
 
