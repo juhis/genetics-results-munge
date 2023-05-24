@@ -2,7 +2,7 @@
 
 mkdir -p fg
 cd fg
-# gsutil -mq cp gs://finngen-public-data-r9/finemapping/summary/* .
+gsutil -mq cp gs://finngen-public-data-r9/finemapping/summary/* .
 ls -1 *.SUSIE.snp.filter.tsv | xargs -I{} basename {} .SUSIE.snp.filter.tsv > traits
 
 while read trait; do
