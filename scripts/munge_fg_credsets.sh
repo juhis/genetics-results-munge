@@ -2,7 +2,7 @@
 
 mkdir -p fg
 cd fg
-gsutil -mq cp gs://finngen-public-data-r8/finemapping/summary/* .
+# gsutil -mq cp gs://finngen-public-data-r9/finemapping/summary/* .
 ls -1 *.SUSIE.snp.filter.tsv | xargs -I{} basename {} .SUSIE.snp.filter.tsv > traits
 
 while read trait; do
@@ -18,5 +18,5 @@ BEGIN{FS=OFS="\t"} NR==1{$3="#cs_id"; print $0} NR>1{$3=$2"_"$3; print $0}
 done < traits
 
 while read line; do
-    echo -e "FinnGen_R8\tGWAS\t$line"
-done < <(ls -d "$PWD/"*.SUSIE.munged.tsv) > ../fg_r8_gwas_credible_sets_munge_input.tsv
+    echo -e "FinnGen_R9\tGWAS\t$line"
+done < <(ls -d "$PWD/"*.SUSIE.munged.tsv) > ../../nf/metadata/fg_r9_gwas_credible_sets_munge_input.tsv
