@@ -1,4 +1,4 @@
-eQTL_Catalogue_R6_sumstats_p0.005.tsv.gz
-FinnGen_R8_sumstats_p0.005.tsv.gz
-ot_sa_gwas_no_finngen_22.09.tsv.gz
-deCODE_pQTLs_NatGen2021_p0.005.tsv.gz
+/disks/data/merge/assoc/eQTL_Catalogue_R6_sumstats_p0.005.tsv.gz
+/disks/data/merge/assoc/FinnGen_R9_sumstats_p0.005.tsv.gz
+/disks/data/merge/assoc/ot_sa_gwas_no_finngen_22.09.allelesorted.tsv.gz
+/disks/data/merge/assoc/deCODE_pQTLs_NatGen2021_p0.005.tsv.nodecodeprefix.gz
