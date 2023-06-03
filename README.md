@@ -22,7 +22,7 @@ Config files:
 | resource | associations | credible sets |
 | --- | --- | --- |
 | eQTL Catalogue R6 | [nf/config/merge.eqtl_r6_sumstats.config](nf/config/merge.eqtl_r6_sumstats.config) | [nf/config/merge.eqtl_r6_credible_sets.config](nf/config/merge.eqtl_r6_credible_sets.config) |
-| FinnGen R8 | [nf/config/merge.finngen_r8_sumstats.config](nf/config/merge.finngen_r8_sumstats.config) | [nf/config/merge.finngen_r8_credible_sets.config](nf/config/merge.finngen_r8_credible_sets.config) |
+| FinnGen R9 | [nf/config/merge.finngen_r9_sumstats.config](nf/config/merge.finngen_r9_sumstats.config) | [nf/config/merge.finngen_r9_credible_sets.config](nf/config/merge.finngen_r9_credible_sets.config) |
 | deCODE pQTL | [nf/config/merge.decode_pqtl_sumstats.config](nf/config/merge.decode_pqtl_sumstats.config) | NA |
 
 Running:
