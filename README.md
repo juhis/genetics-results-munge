@@ -69,7 +69,9 @@ Config files:
 - Associations: [nf/config/merge_resources.sumstats.config](nf/config/merge_resources.sumstats.config)
 - Credible sets: [nf/config/merge_resources.credible_sets.config](nf/config/merge_resources.credible_sets.config)
 
-BBJ and UKBB fine-mapping results from [Kanai et. al 2021](https://www.medrxiv.org/content/10.1101/2021.09.03.21262975v1) have been manually munged and used with this workflow.
+BBJ and UKBB fine-mapping results from [Kanai et al. 2021](https://www.medrxiv.org/content/10.1101/2021.09.03.21262975v1) have been manually munged and used with this workflow.
+
+Significant RNA editing QTLs from [Li et al.](https://www.nature.com/articles/s41586-022-05052-x) have been downloaded from GTEx and munged with [this script](scripts/munge_gtex_edqtls.sh) and used with this workflow.
 
 ### Example:
 
