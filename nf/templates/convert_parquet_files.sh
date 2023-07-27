@@ -46,7 +46,7 @@ for fpath in sorted(glob.glob("*.parquet")):
     for batch in row_group.to_batches():
         for row in zip(*batch.columns):
             if IGNORE_REGEX.match(str(row[study_col_idx])) is None:
-                mlog10p = -math.log10(row[pval_col_idx].as_py())
+                mlog10p = round(-math.log10(row[pval_col_idx].as_py()), 3)
                 print("\t".join(!{first_out_columns_content} + [str(col) if i != pval_col_idx else str(mlog10p) for i,col in enumerate(row)]))
 EOF
 }
