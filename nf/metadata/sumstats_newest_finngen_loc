@@ -1,0 +1,9 @@
+gs://finngen-commons/sumstats_subset/FinnGen_R12_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/FinnGen_snRNAseq_2023-10-05_sumstats.tsv.gz
+gs://finngen-commons/sumstats_subset/FinnGen_SomaScan_2023-03-02_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/FinnGen_Olink_2023-10-11_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/deCODE_pQTLs_NatGen2021_aligned_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/eQTL_Catalogue_R6_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/GTEx_v8_edQTL.tsv.gz
+gs://finngen-commons/opentargets/22.09/ot_sa_gwas_no_finngen_22.09.tsv.gz
+gs://finngen-commons/sumstats_subset/UKBB_Olink_sumstats_2023-09-09_p0.005.tsv.gz
