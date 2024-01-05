@@ -1,4 +1,5 @@
-/disks/data/merge/assoc/eQTL_Catalogue_R6_sumstats_p0.005.tsv.gz
-/disks/data/merge/assoc/FinnGen_R9_sumstats_p0.005.tsv.gz
-/disks/data/merge/assoc/ot_sa_gwas_no_finngen_22.09.allelesorted.tsv.gz
-/disks/data/merge/assoc/deCODE_pQTLs_NatGen2021_p0.005.tsv.nodecodeprefix.gz
+gs://finngen-commons/sumstats_subset/eQTL_Catalogue_R6_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/GTEx_v8_edQTL.tsv.gz
+gs://finngen-commons/sumstats_subset/FinnGen_R9_sumstats_p0.005.tsv.gz
+gs://finngen-commons/sumstats_subset/ot_sa_gwas_no_finngen_22.09.allelesorted.tsv.gz
+gs://finngen-commons/sumstats_subset/deCODE_pQTLs_NatGen2021_aligned_p0.005.tsv.gz

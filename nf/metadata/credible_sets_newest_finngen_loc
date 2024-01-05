@@ -1,0 +1,7 @@
+gs://finngen-commons/credible_sets/FinnGen_R12_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/FinnGen_snRNAseq_2023-10-05_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/FinnGen_SomaScan_2023-03-02_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/FinnGen_Olink_2023-10-11_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/eQTL_Catalogue_R6_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/ukbb_119_bbj_79_credible_sets.tsv.gz
+gs://finngen-commons/credible_sets/UKBB_pQTL_2023-09-06_credible_sets.tsv.gz
